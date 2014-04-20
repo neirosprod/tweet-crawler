@@ -15,16 +15,18 @@ namespace TweetCrawler
             //var crawlerController = new CrawlerController(new ConsoleConsumer());
             var crawlerController = new CrawlerController(new MongoDbConsumer());
 
-            try
+            while (true)
             {
-                crawlerController.Crawl();
-                Console.ReadLine();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                Console.ReadLine();
+                try
+                {
+                    crawlerController.Crawl();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
             }
         }
     }
+
 }
