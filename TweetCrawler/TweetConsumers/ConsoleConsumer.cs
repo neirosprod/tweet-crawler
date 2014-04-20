@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using TweetCrawler.Entities;
 
 namespace TweetCrawler.TweetConsumers
 {
@@ -20,8 +21,8 @@ namespace TweetCrawler.TweetConsumers
         {
             return new List<string>()
                 {
-                    @"https://twitter.com/SolovievDmitry"
-                    ,@"https://twitter.com/xbutteff"
+                    "SolovievDmitry"
+                    ,"xbutteff"
                 };
 
         }

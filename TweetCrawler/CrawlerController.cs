@@ -32,7 +32,9 @@ namespace TweetCrawler
             {
                 try
                 {
-                    var page = GetPage(twitterUser);
+                    var url = "https://twitter.com/" + twitterUser;
+
+                    var page = GetPage(url);
 
                     var crawler = GetCrawler(page);
 

@@ -12,7 +12,8 @@ namespace TweetCrawler
         {
             Console.WriteLine("********************************************************");
 
-            var crawlerController = new CrawlerController(new ConsoleConsumer());
+            //var crawlerController = new CrawlerController(new ConsoleConsumer());
+            var crawlerController = new CrawlerController(new MongoDbConsumer());
 
             try
             {

@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace TweetCrawler
+namespace TweetCrawler.Entities
 {
-    public class Tweet
+    public class Tweet : BaseEntity
     {
         public Tweet()
         {

@@ -59,15 +59,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="CrawlerController.cs" />
     <Compile Include="Crawlers\Crawler1.cs" />
     <Compile Include="Crawlers\Crawler2.cs" />
     <Compile Include="Crawlers\ICrawler.cs" />
+    <Compile Include="Entities\TwtUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tweet.cs" />
+    <Compile Include="Entities\Tweet.cs" />
     <Compile Include="TweetConsumers\ConsoleConsumer.cs" />
     <Compile Include="TweetConsumers\IConsumer.cs" />
+    <Compile Include="TweetConsumers\MongoDbConsumer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
