@@ -40,7 +40,8 @@ namespace TweetCrawler.Crawlers
                     What = tweetNode.QuerySelector(".tweet-text").InnerText,
                     Who = tweetNode.QuerySelector(".fullname").InnerText,
                     WhoId = userId,
-                    Link = tweetNode.QuerySelector(".tweet-timestamp").Attributes["href"].Value,
+                    WhoLink = tweetNode.QuerySelector(".username").InnerText.Replace("@", "https://twitter.com/").Trim(),
+                    Link = "https://twitter.com" + tweetNode.QuerySelector(".tweet-timestamp").Attributes["href"].Value,
                     When = tweetTime.ToString(),
                     StatusId =
                         Regex.Match(tweetNode.QuerySelector(".tweet-timestamp").Attributes["href"].Value,

@@ -59,4 +59,3 @@ C:\Personal\Work\Twitter\git-repo\tweet-crawler\TweetCrawler\bin\Debug\MongoDB.B
 C:\Personal\Work\Twitter\git-repo\tweet-crawler\TweetCrawler\bin\Debug\MongoDB.Bson.xml
 C:\Personal\Work\Twitter\git-repo\tweet-crawler\TweetCrawler\bin\Debug\MongoDB.Driver.pdb
 C:\Personal\Work\Twitter\git-repo\tweet-crawler\TweetCrawler\bin\Debug\MongoDB.Driver.xml
-C:\Personal\Work\Twitter\git-repo\tweet-crawler\TweetCrawler\obj\Debug\TweetCrawler.csprojResolveAssemblyReference.cache
